@@ -1,5 +1,14 @@
 # Data Centers
 
+- [Data Centers](#data-centers)
+  - [Datacenter Architecture](#datacenter-architecture)
+    - [Power Usage Effectiveness](#power-usage-effectiveness)
+  - [Challenges of Data Centers](#challenges-of-data-centers)
+  - [Improving Resource Utilization](#improving-resource-utilization)
+  - [Types of Datacenter Architectures](#types-of-datacenter-architectures)
+  - [Additional Content](#additional-content)
+
+
 Physical facility used by enterprises to house computing and storage. Provides...
 - Power
 - Cooling
