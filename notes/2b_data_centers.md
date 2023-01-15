@@ -1,4 +1,4 @@
-# Cloud Computing Overview
+# Cloud Computing
 
 Datacenters offer hardware and software, that allows customers to make use of their (virtualized) computing resources and services.
 
@@ -64,3 +64,19 @@ Build app, without managing servers, as cloud vendors provide that. Using Lambda
 Cloud hosted software, cloud provider handles all software and infrastructure.
 
 :::
+## Cloud Pros and Cons
+
+Pros:
+- Elimination of up front commitment
+- Buy more resources if you need (short term)
+- Speed
+- Scale
+- Security taken care of
+- Flexible
+
+Cons
+- Dependent on network / internet
+- Privacy concerns
+- Security relies on 3rd party
+- Cost of mirgration
+- Vendor Lock-in
