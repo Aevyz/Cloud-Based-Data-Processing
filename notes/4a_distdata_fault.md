@@ -7,7 +7,8 @@
   - [System Models](#system-models)
     - [Network Behavior](#network-behavior)
     - [Node Behavior](#node-behavior)
-  - [TODO: Page 14](#todo-page-14)
+    - [Synchronous Timing](#synchronous-timing)
+      - [Synchronity Violations](#synchronity-violations)
   - [Additional Content](#additional-content)
 
 
@@ -53,7 +54,6 @@ Used to model assumptions about our system, specifically
 - Node Behavior
 - Timing Behavior
 
-
 ### Network Behavior
 - No network is perfectly reliable
   - Cable could be unplugged
@@ -75,14 +75,55 @@ Used to model assumptions about our system, specifically
 
 ### Node Behavior 
 Executed algorithm could...
-- Crash Stop 
-- Crash Recovery
-- Byzantine
+- Crash Stop (stops executing forever)
+- Crash Recovery (may resume, sometime later)
+- Byzantine (anything: crashing or malicious behavior)
 
-TODO: Page 14
+### Synchronous Timing
+
+- Synchronous
+- Partially Synchronous
+- Asynchronous
+
+#### Synchronity Violations
+
+- Network latency and loss
+- Network congestion 
+- Network Routing
+- OS Scheduling
+- Garbage Collection
+- Node errors
+
 ---
 
 ## Additional Content
+
+::: define Synchronous
+Message latency no greater than known upper bound
+Executed at a known speed
+:::
+
+
+::: define Partially synchronous
+System is asynchronous for a finite time, synchronous otherwise
+:::
+
+::: define Asynchronous
+Messages may be delayed arbitrarily, could be paused, no timing guarantee
+:::
+
+::: define Crash-Stop
+Crash at any time, stops executing
+:::
+
+::: define Crash Recovery
+Crash at any time, may resume and some point in time
+:::
+
+::: define Byzantine
+Deviates from algorithm, could crash, could be malicious
+:::
+
 ::: define Failure
 System as a whole is not working
 :::
