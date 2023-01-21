@@ -81,3 +81,5 @@ The outcome of a series of parallel executed transactions is the same if it were
     - Broadcast every operation
     - Execute when operation is delivered
     - TOB ensures every replica has the same state post execution
+
+![](res/lincas.PNG)
