@@ -34,7 +34,7 @@ The outcome of a series of parallel executed transactions is the same if it were
   - B returns (t_1, updated_content)
 - Because of the timestamp, we can identify that B has the latest content
 - Note that this only works if we have a quorum
-![](res/rawc.PNG)
+![](res/6/rawc.PNG)
 
 ### From the Clients PoV
 
@@ -42,7 +42,7 @@ The outcome of a series of parallel executed transactions is the same if it were
 - If e.g. set and get happen parallel
   - It does not matter if v0 or v1
 - Real time overlap
-![](res/rawcc.PNG)
+![](res/6/rawcc.PNG)
 
 #### Not Linearizable Example
 
@@ -53,7 +53,7 @@ The outcome of a series of parallel executed transactions is the same if it were
 - Because Client 2's operation finishes before client 3's operation starts
   - Require client 3 to receive answer no more stale than client 2's
   - Violated
-![](res/notlin.PNG)
+![](res/6/notlin.PNG)
 
 #### Ensuring Quorum R/W are Linearizable (ABD Algorithm)
 
@@ -63,7 +63,7 @@ The outcome of a series of parallel executed transactions is the same if it were
   - Wait for Quorum Response
   - If more recent valid option sent, send a set with the value to the stale replicas
   - Only after a quorum write is the read finished
-![](res/qrwlin.PNG)
+![](res/6/qrwlin.PNG)
 
 ## Linearizability for Different Ops
 
@@ -82,4 +82,4 @@ The outcome of a series of parallel executed transactions is the same if it were
     - Execute when operation is delivered
     - TOB ensures every replica has the same state post execution
 
-![](res/lincas.PNG)
+![](res/6/lincas.PNG)
