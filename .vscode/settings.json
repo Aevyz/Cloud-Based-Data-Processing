@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
         "boostable",
+        "Linearizability",
         "Rebalance",
         "Rebalancing",
+        "Serializability",
         "vnode"
     ]
 }

@@ -12,12 +12,31 @@
 
 Broadcast|Explanation
 ---|---
-FIFO | Messages sent by the same node must be delivered in the order that they were sent. Messages by other nodes do not matter. 
+FIFO | Messages sent by the same node must be delivered in the order that they were sent. Messages by other nodes do not matter.
 Casual | if b(m1) => b(m2), m1 must be delivered before m2 (b from any node) 
 Total Order | if m1 is delivered before m2 on one node => all nodes (including self) must have received m1 before m2
 FIFO Total Order | Combination of FIFO and Total Order Broadcast 
 
-### Total Order Broadcast Algorithms
+
+### FIFO Broadcast
+- A sends M1 and M3
+- B sends M2
+- That means valid orders are (m1,m2,m3), (m2,m1,m3), (m1,m3,m2)
+- m3 and m1 are not allowed to change place
+
+### Casual Broadcast
+- A sends M1 first
+- A and B send M2 (A) and M3 (B) concurrently
+- Valid orders are (m1,m2,m3) & (m1,m3,m2)
+  - m2 and m3 are allowed to change place, as concurrent
+
+### Total Order Broadcast 
+![](res/4/tob.PNG)
+
+- Only one order in this case
+- But as you can see, M3 must be adapted as also applies to self
+
+#### Algorithms
 
 ::: define Single Leader Approach (Total Order Broadcast)
 - One node designated leader
@@ -27,7 +46,8 @@ FIFO Total Order | Combination of FIFO and Total Order Broadcast
 ::: define Logical Clocks Approach (Total Order Broadcast)
 - Attach a vector timestamp to every message
 - Deliver messages in order of timestamps
-- Requires FIFI links
+- Requires FIFO links 
+  - Wait until timestamp >=T on every node before continuing
 :::
 
 Not fault tolerant!

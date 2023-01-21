@@ -33,6 +33,28 @@ Replication | Read operations return same result / is in same state
 
 ![](res/6/2pc.PNG)
 
+- Client sends begin transaction
+- Transaction executed as normally
+- Command to commit is sent to coordinator
+  - Coordinator asks nodes to prepare for commit
+  - Only when all have given okay is the transaction commited
+- Typically linearizable
+
+What happens in the event of a crash?
+- Coordinator decides when to write to disk
+- Upon recovery, send decision to replicas
+- Problem if crash occurs between prepare and commit (or revert)
+- Algorithm is blocked until coordinator recovers (single point of failure)
+
+## Fault Tolerant 2PC --> Take a look in more depth
+
+- Every node that participates in the transaction uses a total order broadcast to vote (commit or abort).
+- If a node A suspects a Node B has crashed, it will vote abort for Node B 
+- Potential race condition if two conflicting votes are received from same Node
+  - Count first vote to arrive
+
+![](res/6/ft2pc1.PNG)
+![](res/6/ft2pc2.PNG)
 
 --- 
 
@@ -44,4 +66,16 @@ As for Atomic Commits, every node votes whether or not it wishes to commit or ab
 
 ::: define ACID
 Atomicity, Consistency, Isolation, Durability
+:::
+
+::: question Linearizability vs Serializability
+Linearizability only handles a single transaction, whilst Serializability groups transactions together, that can be executed in parallel.
+:::
+
+::: question Can you combine Linearizability and Serializability
+Yes, known as Strict Serializability
+:::
+
+::: define Strict Serializability / Strong One Copy Serializability
+Combine Serializability and Linearizability
 :::
