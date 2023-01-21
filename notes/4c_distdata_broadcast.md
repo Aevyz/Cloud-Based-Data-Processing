@@ -13,7 +13,7 @@
 Broadcast|Explanation
 ---|---
 FIFO | Messages sent by the same node must be delivered in the order that they were sent. Messages by other nodes do not matter.
-Casual | if b(m1) => b(m2), m1 must be delivered before m2 (b from any node) 
+Causal | if b(m1) => b(m2), m1 must be delivered before m2 (b from any node) 
 Total Order | if m1 is delivered before m2 on one node => all nodes (including self) must have received m1 before m2
 FIFO Total Order | Combination of FIFO and Total Order Broadcast 
 
@@ -24,11 +24,12 @@ FIFO Total Order | Combination of FIFO and Total Order Broadcast
 - That means valid orders are (m1,m2,m3), (m2,m1,m3), (m1,m3,m2)
 - m3 and m1 are not allowed to change place
 
-### Casual Broadcast
+### Causal Broadcast
 - A sends M1 first
 - A and B send M2 (A) and M3 (B) concurrently
 - Valid orders are (m1,m2,m3) & (m1,m3,m2)
   - m2 and m3 are allowed to change place, as concurrent
+- Essentially a node's broadcast is always sorted
 
 ### Total Order Broadcast 
 ![](res/4/tob.PNG)
