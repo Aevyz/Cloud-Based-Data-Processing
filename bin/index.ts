@@ -1,6 +1,6 @@
 const fs = require('fs');
 const HTMLParser = require('node-html-parser');
-
+const fse = require('fs-extra');
 var accordion_counter = 0
 /**
  * Setup markdown-it
@@ -189,3 +189,14 @@ fs.writeFile('compiled/' + 'definitions.html', index_text.replace('{{LECTURE_NOT
 
 let question_html = question_template_begin
 // console.log(settings)
+
+const srcDir = `res/`;
+const destDir = `compiled/res`;
+                                 
+// To copy a folder or file, select overwrite accordingly
+try {
+  fse.copySync(srcDir, destDir, { overwrite: true })
+  console.log('Copied Resources over')
+} catch (err) {
+  console.error(err)
+}
