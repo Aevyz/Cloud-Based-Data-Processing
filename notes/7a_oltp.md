@@ -3,7 +3,7 @@
 ## Traditional Stack
 Section | What is there
 ---|---
-Application
+Application | 
 ---|---
 SQL | Compiler, Optimizer, Query Processing
 Transaction | Transaction manager, locking, undo manager
