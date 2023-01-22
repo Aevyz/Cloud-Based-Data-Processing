@@ -1,0 +1,1 @@
+# OLTP: Non-Partitioned Shared-Nothing Log Replicated State Machines

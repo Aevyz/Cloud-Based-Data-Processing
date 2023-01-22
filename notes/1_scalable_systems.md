@@ -60,14 +60,14 @@ Failure Recovery Methods
 
 #### High Availability
 
-::: define High Availibility
+::: define High Availability
 Service must have 100% 24/7 uptime
 :::
 
 * Downtime is bad
   * IT downtime costs on average 5600$ per minute!
     * Gartner study
-* Cloud service providers provide contractual agreemente for quality of service
+* Cloud service providers provide contractual agreement for quality of service
 
 | Downtime Guarantee | Max Downtime per Year | Estimated Costs |
 | ------------------ | --------------------- | --------------- |
@@ -79,7 +79,7 @@ Service must have 100% 24/7 uptime
 Data stored/produced by the services must be consistent
 :::
 
-::: define CAP Theorum
+::: define CAP Theorem
 Consistency
 Availability
 Partition Tolerance
@@ -164,7 +164,7 @@ An evolutionary design is key for continuous innovation
 ## Additional Content
 
 ### Amdahl's Law
-In general terms, Amdahl’s Law states that in parallelization, if P is the proportion of a system or program that can be made parallel, and 1-P is the proportion that remains serial, then the maximum speedup S(N) that can be achieved using N processors is:
+In general terms, Amdahl's Law states that in parallelization, if P is the proportion of a system or program that can be made parallel, and 1-P is the proportion that remains serial, then the maximum speedup S(N) that can be achieved using N processors is:
                 `S(N)=1/((1-P)+(P/N))`
 As N grows the speedup tends to 1/(1-P).
  

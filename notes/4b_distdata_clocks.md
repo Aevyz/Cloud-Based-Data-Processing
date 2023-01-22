@@ -1,12 +1,14 @@
 # Unreliable Clocks
 
-- Distributed systems need to agree upon time, for example
-  - Schedulers
-  - Metrics
-  - Logs
-  - Failure Detrection
-  - Retry
-  - etc.
+- [Unreliable Clocks](#unreliable-clocks)
+  - [Types of Clocks](#types-of-clocks)
+    - [Physical Clocks](#physical-clocks)
+      - [Clock Synchronization](#clock-synchronization)
+      - [Time of Day Clocks](#time-of-day-clocks)
+      - [Monotonic Clock](#monotonic-clock)
+    - [Logical Clocks](#logical-clocks)
+      - [Vector Clocks](#vector-clocks)
+  - [Basically when a message is sent, the vector is updated to the node's current time](#basically-when-a-message-is-sent-the-vector-is-updated-to-the-nodes-current-time)
 
 Time basics:
 - Unix Time begins on the 1st January 1970

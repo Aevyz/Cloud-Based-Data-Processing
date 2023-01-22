@@ -1,6 +1,15 @@
 
 # Linearizability
 
+- [Linearizability](#linearizability)
+  - [When is Linearizability Helpful?](#when-is-linearizability-helpful)
+  - [Read After Write Consistency](#read-after-write-consistency)
+    - [From the Clients PoV](#from-the-clients-pov)
+      - [Not Linearizable Example](#not-linearizable-example)
+      - [Ensuring Quorum R/W are Linearizable (ABD Algorithm)](#ensuring-quorum-rw-are-linearizable-abd-algorithm)
+  - [Linearizability for Different Ops](#linearizability-for-different-ops)
+
+
 ::: define Linearizability
 - Every operation takes effect atomically
 - All operations executed as if on a single copy of data

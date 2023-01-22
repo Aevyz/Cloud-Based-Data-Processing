@@ -1,11 +1,23 @@
 {
     "cSpell.words": [
+        "Amdahl's",
         "boostable",
+        "commited",
+        "CRDT",
+        "Exadata",
+        "HADR",
+        "Lamport",
         "Linearizability",
         "Linearizable",
+        "Millis",
+        "OLTP",
+        "Onedrive",
         "Rebalance",
         "Rebalancing",
+        "Reconsumption",
         "Serializability",
+        "Severless",
+        "uncommits",
         "vnode"
     ]
 }

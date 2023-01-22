@@ -1,5 +1,9 @@
 # Consensus
 
+- [Consensus](#consensus)
+  - [Consensus Leader](#consensus-leader)
+
+
 ::: define Consensus
 When several nodes come to an agreement about an single value
 :::

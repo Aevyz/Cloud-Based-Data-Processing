@@ -1,11 +1,12 @@
 # Broadcast Protocols
 
-- Broadcast / Multicast is a group communication
-  - One node sends message
-  - Rest of nodes in group delivers
-  - If one node if faulty rest carries on
-- Best Effort: Messages may be dropped
-- Reliable: Non-faulty deliver every message --> retransmit dropped
+- [Broadcast Protocols](#broadcast-protocols)
+  - [Reliable Broadcasts](#reliable-broadcasts)
+    - [FIFO Broadcast](#fifo-broadcast)
+    - [Causal Broadcast](#causal-broadcast)
+    - [Total Order Broadcast](#total-order-broadcast)
+      - [Algorithms](#algorithms)
+  - [Replication using Total Order Broadcast](#replication-using-total-order-broadcast)
 
 
 ## Reliable Broadcasts

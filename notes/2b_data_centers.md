@@ -5,9 +5,9 @@
   - [Cloud Pros and Cons](#cloud-pros-and-cons)
 
 
-Datacenters offer hardware and software, that allows customers to make use of their (virtualized) computing resources and services.
+Data centers offer hardware and software, that allows customers to make use of their (virtualized) computing resources and services.
 
-- Datacenters are vendors that rent servers and computing resources
+- Data centers are vendors that rent servers and computing resources
   - Anyone can rent
 - Fine grained pricing model
   - Pay as you go
@@ -19,7 +19,7 @@ Cloud Provider (e.g. AWS) --> Cloud User / SaaS Provider (e.g. Netflix) --> SaaS
 
 Cloud User examples
 - Software / Websites serving real users
-  - Netflix, Pinterest, Spotify
+  - Netflix, Spotify
 - Data Analytics / ML companies
 - Mobile and IoT backends
 - DC operator's own software 
@@ -43,7 +43,7 @@ Use multiple clouds for an application / service. Redundant, but introduces comp
 :::
 
 :::define On-Premise
-Resources located locally (or in a datacenter operated by company)
+Resources located locally (or in a data center operated by company)
 :::
 ::: define Hosted
 Resources hosted and managed by third-party
@@ -83,5 +83,5 @@ Cons
 - Dependent on network / internet
 - Privacy concerns
 - Security relies on 3rd party
-- Cost of mirgration
+- Cost of migration
 - Vendor Lock-in

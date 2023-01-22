@@ -1,7 +1,8 @@
 # Eventual Consistency
-
-- Weaker form of linearizability
-- Form of Optimistic Replication
+- [Eventual Consistency](#eventual-consistency)
+  - [CAP Theorem Addendum](#cap-theorem-addendum)
+  - [Causal Consistency](#causal-consistency)
+    - [Causality vs Linearizability](#causality-vs-linearizability)
 
 
 ::: define Eventual Consistency

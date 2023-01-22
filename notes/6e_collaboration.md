@@ -1,9 +1,13 @@
 # Collaboration and Conflict Resolution 
 
-- Conflict Free Replicated Data Types (CRDT)
-  - Operation Based
-  - State Based
-- Operational Transformations (OT)
+- [Collaboration and Conflict Resolution](#collaboration-and-conflict-resolution)
+  - [Conflict-free Replicated Data Types](#conflict-free-replicated-data-types)
+    - [Operation Based CRDT](#operation-based-crdt)
+    - [State Based Map CRDT](#state-based-map-crdt)
+    - [Text Editing CRDT](#text-editing-crdt)
+  - [Operational Transformation](#operational-transformation)
+  - [](#)
+  - [:::](#-1)
 
 ## Conflict-free Replicated Data Types
 - Operation Based has smaller messages

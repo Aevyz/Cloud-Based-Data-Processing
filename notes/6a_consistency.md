@@ -1,8 +1,11 @@
 # Consistency
 
-- Consistency is important when replicating data
-- Inconsistencies can occur, regardless of method
-  - No perfect method
+- [Consistency](#consistency)
+  - [Consistency Models vs Isolation Levels](#consistency-models-vs-isolation-levels)
+    - [Transaction Isolation](#transaction-isolation)
+    - [Distributed Consistency](#distributed-consistency)
+  - [Two Phase Commits](#two-phase-commits)
+  - [Fault Tolerant 2PC --\> Take a look in more depth](#fault-tolerant-2pc----take-a-look-in-more-depth)
 
 Note that consistency may mean different things to different systems
 
@@ -16,7 +19,7 @@ Replication | Read operations return same result / is in same state
 
 ### Transaction Isolation
 - Avoid race conditions due to concurrently executing transactions
-  - Serizlization
+  - Serialization
   - Repeatable read
   - Read commits
   - Read uncommits
